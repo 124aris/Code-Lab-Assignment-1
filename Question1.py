@@ -4,7 +4,7 @@
 # returns two separate lists—one containing the even numbers and the other containing the odd numbers.
 
 def find_even_odd(numbers):
-    numbers = [int(num) for num in numbers.split()]
+    numbers = [int(num) for num in numbers.split()];
     even_numbers = [];
     odd_numbers = [];
     for num in numbers:
