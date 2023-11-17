@@ -16,7 +16,7 @@
 # Task:
 # Share your Python script containing the library functions. Include a document with the usage examples and test cases.
 
-import Question3Library
+import Question3Library;
 
 string = input("Enter a String of your Choice: ");
 reversed_string = Question3Library.reverse_string(string);
