@@ -16,33 +16,14 @@
 # Task:
 # Share your Python script containing the library functions. Include a document with the usage examples and test cases.
 
-# 1.Reverse String:
-def reverse_string(string):
-    return string[::-1];
-
-# 2.Count Vowels:
-def count_vowels(string):
-    count = 0;
-    vowels = "aeiouAEIOU";
-    for char in string:
-        if char in vowels:
-            count += 1;
-    return count;
-
-# 3.Title Case:
-def title_case(string):
-    return string.title();
-
-# 4.Remove Whitespace:
-def remove_whitespace(string):
-    return ''.join(string.split());
+import Question3Library
 
 string = input("Enter a String of your Choice: ");
-reversed_string = reverse_string(string);
+reversed_string = Question3Library.reverse_string(string);
 print("Reversed String:", reversed_string);
-vowel_count = count_vowels(string);
+vowel_count = Question3Library.count_vowels(string);
 print("Vowel Count:", vowel_count);
-title_cased = title_case(string);
+title_cased = Question3Library.title_case(string);
 print("Title Cased String:", title_cased);
-without_whitespace = remove_whitespace(string);
+without_whitespace = Question3Library.remove_whitespace(string);
 print("String without Whitespace:", without_whitespace);
